@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Home";
 import Team from "./Team";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 function App() {
   return (

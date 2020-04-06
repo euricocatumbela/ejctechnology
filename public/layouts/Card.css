@@ -1,0 +1,42 @@
+.Card-1 {
+  width: 300px;
+  height: 225px;
+  position: relative; /* Because we want the image to floot inside as well as other elements */
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.Card-1:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0 0.5);
+}
+
+.Card-1:hover img {
+  transform: translateY(-20px);
+}
+.Card-1 img {
+  position: absolute; /* Because the real image */
+  top: 0;
+  height: 110%;
+  z-index: -1; /* To display the text Inside the image */
+  transition: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card-1 h3 {
+  color: white;
+  font-size: 30px;
+  margin: 20px 0 0 20px;
+  width: 190px;
+}
+
+.Card-1 p {
+  color: rgba(255, 255, 225, 0.8);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  align-self: end;
+  margin: 0 0 20px;
+}
