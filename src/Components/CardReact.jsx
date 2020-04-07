@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card_Team(props) {
+function CarrdReact(props) {
   return (
     <div className="Card">
       <img src={props.image} alt="" />
@@ -11,4 +11,4 @@ function Card_Team(props) {
   );
 }
 
-export default Card_Team;
+export default CarrdReact;

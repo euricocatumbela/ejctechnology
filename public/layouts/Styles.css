@@ -110,6 +110,15 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.Cards-1 h2 {
+  margin: 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #050a27 0%, #4a548c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .Cards-1Group {
   margin: 50px 40px 100px;
@@ -117,9 +126,6 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   justify-items: center;
-}
-.Cards-1 h2 {
-  margin: 50px 20px;
 }
 
 @media (max-width: 1060px) {

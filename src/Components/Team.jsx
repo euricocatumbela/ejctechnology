@@ -1,21 +1,27 @@
 import React from "react";
 import contacts from "../Contact";
-import Card_Team from "./Card_Team";
+import CardReact from "./CardReact";
+import Header from "./Header";
 function Team() {
   function createCard(contact) {
     return (
-      <Card_Team
-        about={contact.about}
-        image={contact.image}
-        name={contact.name}
-        title={contact.title}
-      />
+      <div>
+        <CardReact
+          about={contact.about}
+          image={contact.image}
+          name={contact.name}
+          title={contact.title}
+        />
+      </div>
     );
   }
   return (
-    <div className="Cards">
-      <h1>Team</h1>
-      <div className="CardGroup">{contacts.map(createCard)}</div>
+    <div>
+      <Header />
+      <div className="Cards">
+        <h1>Team</h1>
+        <div className="CardGroup">{contacts.map(createCard)}</div>
+      </div>
     </div>
   );
 }
