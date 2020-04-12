@@ -88,6 +88,7 @@ function Footer(props) {
         Backgrounds made in Cinema 4D, iOS app in Swift, site in React.
         <a href="mailto:infoejctechnology.co.za"> Email us </a>
         to ask anything. © {currentYear} - Terms of Service - Privacy Policy
+        -EJC TECHNOLOGY
       </Copyright>
     </FooterGroup>
   );
