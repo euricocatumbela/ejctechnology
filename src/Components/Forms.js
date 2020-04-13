@@ -5,6 +5,7 @@ function Forms(props) {
     <div className="card-02">
       <form className="form">
         <img src="/images/ejc-techno.svg" alt="" width="90" />
+        <h1>EJC TECHNOLOGY</h1>
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="password" />
 

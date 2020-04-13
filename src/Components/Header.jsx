@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hasScrolled: false
+      hasScrolled: false,
     };
   }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
 
-  handleScroll = event => {
+  handleScroll = (event) => {
     const scrollTop = window.pageYOffset;
     if (scrollTop > 50) {
       this.setState({ hasScrolled: true });
@@ -25,16 +26,16 @@ class Header extends React.Component {
         className={this.state.hasScrolled ? " Header HeaderScrolled" : "Header"}
       >
         <div className="HeaderGroup">
-          <a href="/">
+          <Link to="/">
             <img src="/images/ejc-techno.svg" alt="" width="60" />
-          </a>
+          </Link>
           {/* <a href="/contact">Contact</a> */}
-          <a href="/careers">Careers</a>
-          <a href="/signin">Sign in</a>
-          <a href="/team">Team</a>
-          <a href="/quote">
+          <Link to="/careers">Careers</Link>
+          <Link to="/signin">Sign in</Link>
+          <Link to="/team">Team</Link>
+          <Link to="/quote">
             <button>Free Quote</button>
-          </a>
+          </Link>
         </div>
       </div>
     );

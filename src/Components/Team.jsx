@@ -17,7 +17,6 @@ function Team() {
   }
   return (
     <div>
-      <Header />
       <div className="Cards">
         <h1>Team</h1>
         <div className="CardGroup">{contacts.map(createCard)}</div>

@@ -4,12 +4,13 @@
   margin-right: 0;
   margin-bottom: 0;
   width: 600px;
-  height: 645px;
+  height: 715px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   background: rgba(4, 8, 37, 0.95);
+  display: grid;
 }
 .container {
   margin: 10px;
@@ -82,4 +83,54 @@ form a {
   font-weight: 600;
   cursor: pointer;
   font-size: 20px;
+}
+form h1 {
+  color: white;
+  font-weight: 600;
+}
+@media (max-width: 1060px) {
+  .card-02 {
+    width: 600px;
+    height: 715px;
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-02 {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 380px;
+    height: 750px;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .form input {
+    width: 200px;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .form button {
+    width: 240px;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .form h1 {
+    font-size: 20px;
+  }
 }
