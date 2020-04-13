@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Forms(props) {
   return (
     <div className="card-02">
@@ -25,9 +25,9 @@ function Forms(props) {
         {/* <a href onClick={strike}>
           + {count}
         </a> */}
-        <a href={props.isRegistered ? "/signnup" : "/signin"}>
+        <Link to={props.isRegistered ? "/signnup" : "/signin"}>
           {!props.isRegistered ? "Sign in now" : "Sign UP"}
-        </a>
+        </Link>
       </form>
     </div>
   );
