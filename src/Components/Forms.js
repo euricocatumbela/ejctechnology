@@ -22,9 +22,7 @@ function Forms(props) {
             ? "Don't have an account?"
             : "Already have an account?"}
         </p>
-        {/* <a href onClick={strike}>
-          + {count}
-        </a> */}
+
         <Link to={props.isRegistered ? "/signnup" : "/signin"}>
           {!props.isRegistered ? "Sign in now" : "Sign UP"}
         </Link>

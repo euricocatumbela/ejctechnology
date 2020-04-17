@@ -30,9 +30,15 @@ class Header extends React.Component {
             <img src="/images/ejc-techno.svg" alt="" width="60" />
           </Link>
           {/* <a href="/contact">Contact</a> */}
-          <Link to="/careers">Careers</Link>
-          <Link to="/signin">Sign in</Link>
-          <Link to="/team">Team</Link>
+          <Link className="Links" to="/careers">
+            Careers
+          </Link>
+          <Link className="Links" to="/signin">
+            Sign in
+          </Link>
+          <Link className="Links" to="/team">
+            Team
+          </Link>
           <Link to="/quote">
             <button>Free Quote</button>
           </Link>

@@ -3,7 +3,7 @@ import data from "./Footerdata";
 import styled from "styled-components";
 
 const FooterGroup = styled.div`
-  background: #212c4f;
+  background: #161f3d;
   margin-top: 150px;
   padding: 50px 0;
   display: grid;

@@ -1,26 +1,30 @@
 import React from "react";
-import contacts from "../Contact";
-import CardReact from "./CardReact";
+import Profile from "./Profile";
+import contacts from "./Static";
 import Header from "./Header";
+import Footer from "./Footer";
+
 function Team() {
-  function createCard(contact) {
+  function createProfile(create) {
     return (
-      <div>
-        <CardReact
-          about={contact.about}
-          image={contact.image}
-          name={contact.name}
-          title={contact.title}
-        />
-      </div>
+      <Profile
+        image={create.image}
+        bio={create.bio}
+        name={create.title}
+        title={create.name}
+      />
     );
   }
+
   return (
-    <div>
-      <div className="Cards">
-        <h1>Team</h1>
-        <div className="CardGroup">{contacts.map(createCard)}</div>
+    <div className="Profiles">
+      <Header />
+      <div className="Team">
+        <h2> Meet our Team</h2>
       </div>
+      <div className="ProfileGroup">{contacts.map(createProfile)}</div>
+
+      <Footer />
     </div>
   );
 }

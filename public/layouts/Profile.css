@@ -1,0 +1,64 @@
+.Profile {
+  width: 480px;
+  height: 305px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-image: initial;
+
+  box-shadow: 0 20px 40px rbga(0, 0, 0, 0.25);
+  background: rgba(4, 8, 37, 0.95);
+
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  /* transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Profile:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+.Profile:hover img {
+  transform: translateY(-20px);
+}
+
+.Profile img {
+  margin: 20px 0 0 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Profile h4 {
+  margin: 20px 0 0 20px;
+  color: white;
+  margin: 5px 0 0 5px;
+  text-align: center;
+}
+
+.Profile h2 {
+  color: rgb(176, 30, 255);
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  margin: 20px 0 0 20px;
+}
+
+.Profile p {
+  color: white;
+  font-size: 24px;
+  margin: 20px 0 0 20px;
+  text-align: center;
+}
+
+.Profile h1 {
+  margin: 20px 0 0 20px;
+  color: rgb(176, 30, 255);
+  font-weight: 700;
+}
