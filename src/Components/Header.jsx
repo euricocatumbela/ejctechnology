@@ -27,7 +27,7 @@ class Header extends React.Component {
       >
         <div className="HeaderGroup">
           <Link to="/">
-            <img src="/images/ejc-techno.svg" alt="" width="60" />
+            <img src="/images/Logo.svg" alt="" width="20" />
           </Link>
           {/* <a href="/contact">Contact</a> */}
           <Link className="Links" to="/careers">

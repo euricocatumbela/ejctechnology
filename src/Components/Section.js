@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Waves from "./Waves";
 const SectionGroup = styled.div`
-  background: url(${props => props.image});
+  background: url(${(props) => props.image});
   height: 720px;
   background-size: cover;
   display: grid;

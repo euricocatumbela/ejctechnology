@@ -17,13 +17,12 @@ function Team() {
   }
 
   return (
-    <div className="Profiles">
+    <div>
       <Header />
-      <div className="Team">
+      <div className="Profile">
         <h2> Meet our Team</h2>
+        <div className="ProfileGroup">{contacts.map(createProfile)}</div>
       </div>
-      <div className="ProfileGroup">{contacts.map(createProfile)}</div>
-
       <Footer />
     </div>
   );

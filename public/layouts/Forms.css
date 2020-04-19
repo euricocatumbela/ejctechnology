@@ -1,11 +1,16 @@
-.card-02 {
-  margin-top: 50px;
-  margin-left: 500px;
-  margin-right: 0;
-  margin-bottom: 0;
-  width: 600px;
-  height: 715px;
-  position: relative;
+.Hero1 {
+  background: url("/images/background55.jpg");
+  height: 1110px;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* This was used for SVG */
+}
+
+.SigninCard .form {
+  width: 496px;
+  height: 496px;
+  margin: 0 auto;
+  /* padding: auto auto; */
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
@@ -13,8 +18,8 @@
   display: grid;
 }
 .container {
-  margin: 10px;
-  padding: 100px 0;
+  margin: 0;
+  padding: 150px 0 10px 0;
   text-align: center;
 }
 
@@ -24,17 +29,18 @@
 }
 
 form {
+  margin: auto;
   padding-top: 100px;
   padding-right: 0;
   padding-left: 0;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   position: relative;
 }
 form img {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 30px;
+  padding-left: 45%;
+  padding-bottom: 10px;
 }
 form input {
   border: 1px solid rgba(252, 252, 252, 0.4);
@@ -88,49 +94,11 @@ form h1 {
   color: white;
   font-weight: 600;
 }
-@media (max-width: 1060px) {
-  .card-02 {
-    width: 600px;
-    height: 715px;
-    position: relative;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-    justify-items: center;
-    grid-template-rows: 1fr 1fr;
-  }
-}
 
 @media (max-width: 640px) {
-  .card-02 {
-    position: relative;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-    width: 380px;
-    height: 750px;
-    justify-items: center;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-@media (max-width: 640px) {
-  .form input {
-    width: 200px;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .form button {
-    width: 240px;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .form h1 {
-    font-size: 20px;
+  .SigninCard .form {
+    width: 340px;
+    height: 400px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

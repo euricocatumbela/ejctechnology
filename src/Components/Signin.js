@@ -1,5 +1,7 @@
 import React from "react";
 import Forms from "./Forms";
+import Header from "./Header";
+import Footer from "./Footer";
 // import styled from "styled-components";
 
 function Signin() {
@@ -10,11 +12,14 @@ function Signin() {
   //   }
 
   return (
-    <di>
+    <div className="Hero1">
+      <Header />
+
       <div className="container">
         <Forms isRegistered={userIsRegistered} />
       </div>
-    </di>
+      <Footer />
+    </div>
   );
 }
 

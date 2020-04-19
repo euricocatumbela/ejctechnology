@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Card from "./Card";
+
 function Quote() {
   const [project, setProject] = useState();
   const [email, setEmail] = useState();
@@ -23,7 +23,7 @@ function Quote() {
   }
 
   return (
-    <div>
+    <div className="Hero1">
       <Header />
       <div className="CardQuote">
         <form className="form">
@@ -55,9 +55,8 @@ function Quote() {
           {/* <input onChange={handleBudget} name="Question_1" value={budget} /> */}
           <button type="submit">submit</button>
         </form>
-
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

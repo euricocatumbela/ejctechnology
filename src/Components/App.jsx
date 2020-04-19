@@ -3,7 +3,7 @@ import Home from "./Home";
 import Team from "./Team";
 import Careers from "./Careers";
 
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Signin from "./Signin";
 import Signnup from "./Signnup";
 

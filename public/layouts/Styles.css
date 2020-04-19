@@ -14,7 +14,7 @@ a {
 }
 
 .Hero {
-  background: url("/images/wallpaper3.jpg");
+  background: url("/images/background55.jpg");
   height: 920px;
   background-size: cover;
   background-position: center;
@@ -123,7 +123,7 @@ a {
 .Cards-1Group {
   margin: 50px 40px 100px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   justify-items: center;
 }
@@ -141,45 +141,40 @@ a {
 }
 
 /*   Team Card ********************************************************************************** */
+.Profile {
+  width: 406px;
+  height: 326px;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  background: rgba(4, 8, 37, 0.95);
+}
+
+.Profiles h2 {
+  color: rgb(176, 30, 255);
+  font-size: 60px;
+  font-weight: 700;
+  padding: 0px 0px 40px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .ProfileGroup {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
-  justify-items: center;
-  padding-top: 80px;
-  padding-right: 350px;
-  padding-left: 350px;
-  padding-bottom: 80px;
+  margin: 0px 300px auto;
 }
 
-.Team h2 {
-  color: rgb(176, 30, 255);
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-  padding: 180px 0 10px 340px;
-}
-
-@media (max-width: 1060px) {
+@media (max-with: 640px) {
   .ProfileGroup {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 640px) {
+/* @media (max-with: 1060px) {
   .ProfileGroup {
-    grid-template-columns: repeat(1, 1fr);
   }
-}
-
-@media (max-width: 1060px) {
-  .ProfileGroup .Profile {
-  }
-}
-
-@media (max-width: 640px) {
-  .ProfileGroup .Profile {
-    width: 400px;
-    height: 320px;
-  }
-}
+} */
