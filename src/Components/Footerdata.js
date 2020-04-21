@@ -1,31 +1,31 @@
 const data = [
   {
-    title: "MAIN"
+    title: "MAIN",
   },
   {
-    title: "RECOURCES"
+    title: "RECOURCES",
   },
   {
-    title: "COMMUNITY"
+    title: "COMMUNITY",
   },
   {
-    title: "Home"
+    title: "Home",
   },
-  {
-    title: "React"
-  },
-  {
-    title: "Team"
-  },
-  {
-    title: "Careers"
-  },
-  {
-    title: "Mongo DD"
-  },
-  {
-    title: "Help"
-  }
+  // {
+  //   title: "React"
+  // },
+  // {
+  //   title: "Team"
+  // },
+  // {
+  //   title: "Careers"
+  // },
+  // {
+  //   title: "Mongo DD"
+  // },
+  // {
+  //   title: "Help"
+  // }
 ];
 
 export default data;

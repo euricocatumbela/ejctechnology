@@ -1,6 +1,7 @@
 import React from "react";
 import data from "./Footerdata";
 import styled from "styled-components";
+import { createClient } from "contentful";
 
 const FooterGroup = styled.div`
   background: #161f3d;
@@ -14,7 +15,7 @@ const FooterGroup = styled.div`
   }
 `;
 const Text = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: white;
   max-width: 500px;
@@ -60,38 +61,50 @@ const Copyright = styled.div`
   max-width: 500px;
   margin: 0 auto;
   padding: 0 20px;
+  font-size: 14px;
 `;
+const time = new Date();
+const currentYear = time.getFullYear();
 
-function Footer(props) {
-  const time = new Date();
-  const currentYear = time.getFullYear();
-  return (
-    <FooterGroup>
-      <Text>
-        Startups always trying to find the best ideas to setup their own
-        business
-      </Text>
-      <Button>Tweet</Button>
-      <LinkGroup>
-        <p style={{ color: "white" }}>{data[0].title}</p>
-        <p style={{ color: "white" }}>{data[1].title}</p>
-        <p style={{ color: "white" }}>{data[2].title}</p>
-        <a href="/euricocatumbela.co.za">{data[3].title}</a>
-        <a href="/euricocatumbela.co.za">{data[4].title}</a>
-        <a href="/euricocatumbela.co.za">{data[5].title}</a>
-        <a href="/euricocatumbela.co.za">{data[6].title}</a>
-        <a href="/euricocatumbela.co.za">{data[7].title}</a>
-        <a href="/euricocatumbela.co.za">{data[8].title}</a>
-      </LinkGroup>
+class Footer extends React.Component {
+  constructor() {
+    super();
+    this.state = { links: [] };
+    this.client = createClient({
+      accessToken: "ktzJBosg2ycZifvJEhm5TMr2s1VyRrGQuCAdzhxF7gs",
+      space: "b1uti8s55y9c",
+    });
+  }
 
-      <Copyright>
-        Backgrounds made in Cinema 4D, iOS app in Swift, site in React.
-        <a href="mailto:infoejctechnology.co.za"> Email us </a>
-        to ask anything. © {currentYear} - Terms of Service - Privacy Policy
-        -EJC TECHNOLOGY
-      </Copyright>
-    </FooterGroup>
-  );
+  componentDidMount() {
+    this.client
+      .getEntries({ content_type: "link" })
+      .then((response) => this.setState({ links: response.items }));
+  }
+
+  render() {
+    return (
+      <FooterGroup>
+        <Text>
+          Startups always trying to find the best ideas to setup their own
+          business
+        </Text>
+        <Button>Tweet</Button>
+        <LinkGroup>
+          {this.state.links.map((link) => (
+            <a href={link.sys.id}>{link.fields.title}</a>
+          ))}
+        </LinkGroup>
+
+        <Copyright>
+          Backgrounds made in Cinema 4D, iOS app in Swift, site in React.
+          <a href="mailto:infoejctechnology.co.za"> Email us </a>
+          to ask anything. Copyright Ejc Technology © {currentYear} -{" "}
+          <a href="/"> Terms of Service - Privacy Policy </a>
+        </Copyright>
+      </FooterGroup>
+    );
+  }
 }
 
 export default Footer;

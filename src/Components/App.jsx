@@ -8,6 +8,7 @@ import Signin from "./Signin";
 import Signnup from "./Signnup";
 
 import Quote from "./Quote";
+import Article from "./Article";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/signnup" component={Signnup} />
         <Route exact path="/quote" component={Quote} />
         <Route exact path="/careers" component={Careers} />
+        <Route exact path="/article" component={Article} />
       </Switch>
     </Router>
   );

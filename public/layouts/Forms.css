@@ -61,11 +61,12 @@ form input {
 form button {
   appearance: none;
   outline: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     104.74deg,
     rgb(176, 30, 255) 0%,
     rgb(225, 70, 124) 100%
-  );
+  ); */
+  background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
   border: 0;
   padding: 10px 15px;
   color: white;
