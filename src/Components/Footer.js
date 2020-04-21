@@ -2,6 +2,7 @@ import React from "react";
 import data from "./Footerdata";
 import styled from "styled-components";
 import { createClient } from "contentful";
+import { Link } from "react-router-dom";
 
 const FooterGroup = styled.div`
   background: #161f3d;
@@ -92,7 +93,7 @@ class Footer extends React.Component {
         <Button>Tweet</Button>
         <LinkGroup>
           {this.state.links.map((link) => (
-            <a href={link.sys.id}>{link.fields.title}</a>
+            <Link to={link.fields.url}>{link.fields.title}</Link>
           ))}
         </LinkGroup>
 
