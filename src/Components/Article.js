@@ -3,7 +3,7 @@ import { createClient } from "contentful";
 class Article extends React.Component {
   constructor() {
     super();
-    this.state = { links: [] };
+    this.state = { articles: [] };
     this.client = createClient({
       accessToken: "ktzJBosg2ycZifvJEhm5TMr2s1VyRrGQuCAdzhxF7gs",
       space: "b1uti8s55y9c",
@@ -11,19 +11,18 @@ class Article extends React.Component {
   }
   componentDidMount() {
     this.client
-      .getEntries({ content_type: "link" })
-      .then((response) => this.setState({ links: response.items }));
+      .getEntries({ content_type: "article" })
+      .then((response) => this.setState({ articles: response.items }));
   }
 
   render() {
     return (
       <div className="App">
-        {/* <h1>{this.state.articles.title}</h1> */}
-        <h2>
-          {this.state.links.map((link) => {
-            return <p key={link.id}>{link.fields.title}</p>;
-          })}
-        </h2>
+        <h1>
+          {this.state.articles.map((article) => (
+            <h2 txt={article.fields.body}> {article.fields.title}</h2>
+          ))}
+        </h1>
       </div>
     );
   }

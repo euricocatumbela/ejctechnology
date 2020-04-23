@@ -92,6 +92,9 @@ class Footer extends React.Component {
         </Text>
         <Button>Tweet</Button>
         <LinkGroup>
+          <p style={{ color: "white" }}>{data[0].title}</p>
+          <p style={{ color: "white" }}>{data[1].title}</p>
+          <p style={{ color: "white" }}>{data[2].title}</p>
           {this.state.links.map((link) => (
             <Link to={link.fields.url}>{link.fields.title}</Link>
           ))}

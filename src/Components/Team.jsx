@@ -19,7 +19,7 @@ function Team() {
   return (
     <div>
       <Header />
-      <div className="Profile">
+      <div className="Profiles">
         <h2> Meet our Team</h2>
         <div className="ProfileGroup">{contacts.map(createProfile)}</div>
       </div>

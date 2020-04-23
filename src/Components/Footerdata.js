@@ -8,9 +8,9 @@ const data = [
   {
     title: "COMMUNITY",
   },
-  {
-    title: "Home",
-  },
+  // {
+  //   title: "Home",
+  // },
   // {
   //   title: "React"
   // },
