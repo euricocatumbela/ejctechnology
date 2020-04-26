@@ -14,11 +14,11 @@ a {
 }
 
 .Hero {
-  background: url("/images/background55.jpg");
+  /* background: url("/images/background55.jpg");
   height: 920px;
   background-size: cover;
   background-position: center;
-  position: relative; /* This was used for SVG */
+  position: relative; This was used for SVG */
 }
 
 .HeroGroup {
@@ -123,7 +123,7 @@ a {
 .Cards-1Group {
   margin: 50px 40px 100px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   justify-items: center;
 }
@@ -141,30 +141,20 @@ a {
 }
 
 /*   Team Card ********************************************************************************** */
-
-.Profiles h2 {
-  color: rgb(176, 30, 255);
-  font-size: 60px;
-  font-weight: 700;
-  padding: 0px 0px 40px 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.ProfileGroup {
+.GroupTeam {
+  margin: 80px 0 80px 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
-  margin: 0px 300px auto;
 }
-
-@media (max-with: 640px) {
-  .ProfileGroup {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 1060px) {
+  .Responsive {
+    margin: auto;
   }
 }
 
-/* @media (max-with: 1060px) {
-  .ProfileGroup {
+@media (max-width: 1060px) {
+  .GroupTeam {
+    grid-template-columns: repeat(2, 1fr);
   }
-} */
+}

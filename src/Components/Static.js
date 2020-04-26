@@ -31,6 +31,24 @@ const contacts = [
     name: "Kudakwshe Mukombachoto",
     title: "COO & Front End",
   },
+
+  {
+    id: 4,
+    image: "./images/eurico.jpeg",
+    bio:
+      "I found Design+Code amazing which takes  me each step  from design to code the app and store deployment.",
+    name: "Abednego Jeremias",
+    title: "Front End Student",
+  },
+
+  {
+    id: 4,
+    image: "./images/eurico.jpeg",
+    bio:
+      "I found Design+Code amazing which takes  me each step  from design to code the app and store deployment.",
+    name: "Abednego Jeremias",
+    title: "Front End Intern",
+  },
 ];
 
 export default contacts;

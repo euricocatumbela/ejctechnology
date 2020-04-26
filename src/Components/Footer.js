@@ -52,6 +52,11 @@ const LinkGroup = styled.div`
     color: white;
   }
 
+  @media (max-width: 1060px) {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100px;
+  }
+
   @media (max-width: 640px) {
     grid-template-columns: repeat(1, 1fr);
     width: 100px;

@@ -67,16 +67,6 @@ function Home(props) {
             text={day + " April "}
             image="/images/wallpaper2.jpg"
           />
-          <Card
-            title="React for designers"
-            text={day + " April "}
-            image="/images/wallpaper2.jpg"
-          />
-          <Card
-            title="React for designers"
-            text={day + " April "}
-            image="/images/wallpaper2.jpg"
-          />
         </div>
       </div>
 
@@ -119,27 +109,6 @@ function Home(props) {
             text={day + " April "}
             image="/images/wallpaper.jpg"
           />
-          <Card
-            title="React for designers"
-            text={day + " April "}
-            image="/images/wallpaper2.jpg"
-          />
-          <Card
-            title="React for designers"
-            text={day + " April "}
-            image="/images/wallpaper2.jpg"
-          />
-        </div>
-      </div>
-
-      <div className="HeroGroup">
-        <div className="Logos">
-          <img src="/Logos/logo-google.svg" alt="" width="110" />
-          <img src="/Logos/logo-apple.svg" alt="" width="80" />
-          <img src="/Logos/logo-amazon.svg" alt="" width="110" />
-          <img src="/Logos/logo-facebook.svg" alt="" width="110" />
-          <img src="/Logos/logo-airbnb.svg" alt="" width="110" />
-          {/* <img src="/Logos/logo-square.svg" alt="" width="110" /> */}
         </div>
       </div>
 

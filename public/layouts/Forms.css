@@ -12,10 +12,16 @@
   margin: 0 auto;
   /* padding: auto auto; */
   overflow: hidden;
-  border-radius: 10px;
+
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   background: rgba(4, 8, 37, 0.95);
   display: grid;
+
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-image: initial;
 }
 .container {
   margin: 0;
