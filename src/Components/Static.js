@@ -3,49 +3,50 @@ const contacts = [
     id: 1,
     image: "./images/eurico.jpeg",
     bio:
-      "I found Design+Code amazing which takes  me each step  from design to code the app and store deployment.",
+      "Eurico is a consulting engineer and designer who is alway in love with technology and new creations, imagination is what drives him and makes him always trying to create things from scratch.  ",
     name: "Eurico Catumbela",
-    title: "CEO & Coufounder",
+    title: "Consulting Engineer & Designer",
   },
   {
     id: 2,
-    image: "/images/eurico.jpeg",
+    image: "/images/Daniel.jpeg",
     bio:
-      "I found Design+Code amazing which takes  me each step  from design to code the app and store deployment.",
+      "Daniel is a junior software engineer, he likes to play with new things and always eager to learn and help his team.",
     name: "Daniel Amadi",
     title: "Software Engineer",
   },
   {
     id: 3,
-    image: "/images/eurico.jpeg",
+    image: "/images/joel.jpg",
     bio:
-      "I found Design+Code amazing which takes  me each step  from design to code the app and store deployment. Love coding since I was 9",
-    name: "Joel Undo",
+      "Known as Mr Juice, is a software engineer, Loves play with big numbers and he is passionate about trading and never miss a great bet. Eager to learn new things.",
+    name: "Joel Aundu",
     title: "Software Engineer",
   },
   {
     id: 4,
-    image: "./images/eurico.jpeg",
+    image: "./images/kuda.png",
     bio:
-      "I found Design+Code amazing which takes  me each step  from design to code the app and store deployment.",
+      "Kuda is a humble and tenacious young man who is determined to work hard and achieve all his goals. He is motivated by life's challenges, to do his best and succeed no matter what.",
+
     name: "Kudakwshe Mukombachoto",
-    title: "COO & Front End",
+    title: "COO & Front End Engineer",
   },
 
   {
     id: 4,
-    image: "./images/eurico.jpeg",
+    image: "./images/Abulele.jpeg",
     bio:
-      "I found Design+Code amazing which takes  me each step  from design to code the app and store deployment.",
-    name: "Abednego Jeremias",
-    title: "Front End Student",
+      "Abulele is junior data scientist, passionate about data science and the internet of things. Love to grow and learn new things.",
+    name: "Abulele Mditshwa",
+    title: "Data Scientist ",
   },
 
   {
     id: 4,
-    image: "./images/eurico.jpeg",
+    image: "./images/Nelgo.jpeg",
     bio:
-      "I found Design+Code amazing which takes  me each step  from design to code the app and store deployment.",
+      "Abednego is a junior developer who staterd his career working remotely, very talented and motived young man. Passionate about programming and design.",
     name: "Abednego Jeremias",
     title: "Front End Intern",
   },

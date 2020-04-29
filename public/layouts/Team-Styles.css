@@ -22,10 +22,17 @@
   padding: 150px 0 150px 0;
 }
 .TeamHeading h1 {
-  font-size: 82px;
-  margin: 20px 0 0 20px;
-  color: rgb(176, 30, 255);
+  background: linear-gradient(
+    104.74deg,
+    rgb(176, 30, 255) 0%,
+    rgb(225, 70, 124) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
   font-weight: 700;
+  margin: 20px 0 0 20px;
+
   text-align: center;
 }
 
@@ -34,7 +41,7 @@
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
 }
 
 .CardTeam:hover {
@@ -46,27 +53,40 @@
 }
 
 .CardTeam p {
-  color: white;
-  font-size: 22px;
+  background: linear-gradient(
+    104.74deg,
+    rgb(198, 208, 235) 0%,
+    rgb(198, 208, 235) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 15px;
+  font-weight: 500;
   margin: 20px 0 0 20px;
   text-align: center;
-  line-height: 1.2;
-  font-weight: 500;
+  line-height: 1.6;
 }
 .CardTeam img {
   margin: 20px 0 0 20px;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 100%;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   line-height: 1.2;
 }
 
 .CardTeam h3 {
-  margin: 22px 0 0 20px;
-  color: rgb(176, 30, 255);
+  background: linear-gradient(
+    104.74deg,
+    rgb(176, 30, 255) 0%,
+    rgb(225, 70, 124) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 50px 0 50px 0;
   text-align: center;
+  font-size: 28px;
 }
 
 .CardTeam h4 {

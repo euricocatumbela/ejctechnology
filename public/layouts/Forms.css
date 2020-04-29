@@ -30,6 +30,13 @@
 }
 
 .container h1 {
+  background: linear-gradient(
+    104.74deg,
+    rgb(176, 30, 255) 0%,
+    rgb(225, 70, 124) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 40px;
   font-weight: 200;
 }
@@ -67,11 +74,6 @@ form input {
 form button {
   appearance: none;
   outline: 0;
-  /* background: linear-gradient(
-    104.74deg,
-    rgb(176, 30, 255) 0%,
-    rgb(225, 70, 124) 100%
-  ); */
   background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
   border: 0;
   padding: 10px 15px;
@@ -98,14 +100,39 @@ form a {
   font-size: 20px;
 }
 form h1 {
-  color: white;
+  color: whitesmoke;
   font-weight: 600;
 }
 
 @media (max-width: 640px) {
   .SigninCard .form {
     width: 340px;
-    height: 400px;
+    height: 390px;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .SigninCard input {
+    width: 200px;
+    height: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .SigninCard button {
+    width: 200px;
+    height: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .SigninCard input {
+    width: 200px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .SigninCard h1 {
+    font-size: 20px;
   }
 }

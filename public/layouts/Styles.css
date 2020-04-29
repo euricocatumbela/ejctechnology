@@ -14,11 +14,11 @@ a {
 }
 
 .Hero {
-  /* background: url("/images/background55.jpg");
+  background: url("/images/background55.jpg");
   height: 920px;
   background-size: cover;
   background-position: center;
-  position: relative; This was used for SVG */
+  position: relative; This was used for SVG
 }
 
 .HeroGroup {

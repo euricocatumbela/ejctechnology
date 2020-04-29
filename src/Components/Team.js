@@ -19,7 +19,7 @@ function Team() {
     <div className="Responsive">
       <Header />
       <div className="TeamHeading">
-        <h1>Team</h1>
+        <h1>The Team </h1>
         <div className="GroupTeam">{contacts.map(createCard)}</div>
       </div>
       <Footer />

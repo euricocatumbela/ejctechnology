@@ -5,28 +5,42 @@
 .CardQuote .form {
   width: 496px;
   height: 496px;
-  /* height: 440px; */
   margin: 0 auto;
   padding: auto auto;
-  /* padding: 150px 0 150px 0; */
   overflow: hidden;
-  border-radius: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   background: rgba(4, 8, 37, 0.95);
-  /* background: black; */
+
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-image: initial;
   display: grid;
 }
 
 .form button {
-  height: 60px;
   width: 230px;
+  height: 60px;
   margin: auto;
 }
 
 @media (max-width: 640px) {
   .CardQuote .form {
     width: 300px;
-    height: 260px;
+    height: 268px;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .CardQuote input {
+    width: 200px;
+    height: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .CardQuote button {
+    width: 200px;
+    height: 50px;
   }
 }
