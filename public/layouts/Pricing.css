@@ -15,6 +15,7 @@
   border-radius: 20px;
   border: solid;
   background: rgba(4, 8, 37, 0.8);
+  box-shadow: 0 2px 5px #ccc;
 }
 
 .PricingCard .Row-border {

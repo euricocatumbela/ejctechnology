@@ -95,7 +95,7 @@ class Footer extends React.Component {
           Startups always trying to find the best ideas to setup their own
           business
         </Text>
-        <Button>Tweet</Button>
+        <Button>Podcast</Button>
         <LinkGroup>
           <p style={{ color: "white" }}>{data[0].title}</p>
           <p style={{ color: "white" }}>{data[1].title}</p>
@@ -109,7 +109,7 @@ class Footer extends React.Component {
           Backgrounds made in Cinema 4D, iOS app in Swift, site in React.
           <a href="mailto:infoejctechnology.co.za"> Email us </a>
           to ask anything. Copyright Ejc Technology © {currentYear} -{" "}
-          <a href="/"> Terms of Service - Privacy Policy </a>
+          <Link to="/privacy"> Terms of Service - Privacy Policy </Link>
         </Copyright>
       </FooterGroup>
     );

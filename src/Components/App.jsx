@@ -7,9 +7,11 @@ import PromoCard from "./PromoCard";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Signin from "./Signin";
 import Signnup from "./Signnup";
-
+import FAQ from "./FAQ";
+import Privacy from "./Privacy";
 import Quote from "./Quote";
 import Article from "./Article";
+import Podcast from "./Podcast";
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
         <Route exact path="/article" component={Article} />
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/promocard" component={PromoCard} />
+        <Route exact path="/faq" component={FAQ} />
+        <Route exact path="/privacy" component={Privacy} />
+        <Route exact path="/podcast" component={Podcast} />
       </Switch>
     </Router>
   );
