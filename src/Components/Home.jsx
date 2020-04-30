@@ -22,9 +22,7 @@ function Home(props) {
             Services about the best tools and design systems. Prototype and
             build apps with React and Swift.
           </p>
-          <Link to="/https://www.buzzsprout.com/1027399">
-            Listen to my Podcst
-          </Link>
+          <a href="https://www.buzzsprout.com/1027399">Listen to my Podcst</a>
           <div className="Logos">
             <img src="/images/logo-figma.png" alt="" width="60" />
             <img src="/images/logo-framer.png" alt="" width="60" />

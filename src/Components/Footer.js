@@ -95,7 +95,9 @@ class Footer extends React.Component {
           Startups always trying to find the best ideas to setup their own
           business
         </Text>
-        <Button>Podcast</Button>
+        <a href="https://www.buzzsprout.com/1027399"> </a>
+        <Button> Podcast</Button>
+
         <LinkGroup>
           <p style={{ color: "white" }}>{data[0].title}</p>
           <p style={{ color: "white" }}>{data[1].title}</p>
