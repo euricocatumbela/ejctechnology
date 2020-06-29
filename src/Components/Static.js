@@ -34,7 +34,7 @@ const contacts = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: "./images/Abulele.jpeg",
     bio:
       "Abulele is junior data scientist, passionate about data science and the internet of things. Love to grow and learn new things.",
@@ -43,7 +43,16 @@ const contacts = [
   },
 
   {
-    id: 4,
+    id: 6,
+    image: "./images/Nelgo.jpeg",
+    bio:
+      "Abednego is a junior developer who staterd his career working remotely, very talented and motived young man. Passionate about programming and design.",
+    name: "Abednego Jeremias",
+    title: "Front End Intern",
+  },
+
+  {
+    id: 7,
     image: "./images/Nelgo.jpeg",
     bio:
       "Abednego is a junior developer who staterd his career working remotely, very talented and motived young man. Passionate about programming and design.",

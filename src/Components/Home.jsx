@@ -4,7 +4,7 @@ import Card from "./Card";
 import Section from "./Section";
 import Waves from "./Waves";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Home(props) {
   var d = new Date();
